@@ -76,6 +76,7 @@
 #include "gui/UBThumbnailScene.h"
 #include "gui/UBToolWidget.h"
 #include "gui/UBToolbarButtonGroup.h"
+#include "gui/UBColorPaletteButton.h"
 
 #include "podcast/UBPodcastController.h"
 
@@ -350,6 +351,8 @@ void UBBoardController::setupToolbar()
     UBSettings *settings = UBSettings::settings();
 
     // Setup color choice widget
+    // openboard-tni : un seul bouton de couleur qui ouvre une grille de 16 couleurs (2 x 8),
+    // à la place des 5 boutons fixes d'origine.
     QList<QAction *> colorActions;
     colorActions.append(mMainWindow->actionColor0);
     colorActions.append(mMainWindow->actionColor1);
@@ -357,11 +360,17 @@ void UBBoardController::setupToolbar()
     colorActions.append(mMainWindow->actionColor3);
     colorActions.append(mMainWindow->actionColor4);
 
-    UBToolbarButtonGroup *colorChoice =
-            new UBToolbarButtonGroup(mMainWindow->boardToolBar, colorActions);
+    UBColorPaletteButton *colorChoice = new UBColorPaletteButton(mMainWindow->boardToolBar);
     colorChoice->setLabel(tr("Color"));
 
     mMainWindow->boardToolBar->insertWidget(mMainWindow->actionBackgrounds, colorChoice);
+
+    // Les 5 actions d'origine restent utilisables (raccourcis clavier, palette du mode bureau) :
+    // chacune sélectionne la couleur de même rang.
+    for (int i = 0; i < colorActions.size(); i++)
+    {
+        connect(colorActions.at(i), &QAction::triggered, this, [this, i]() { setColorIndex(i); });
+    }
 
     connect(settings->appToolBarDisplayText, SIGNAL(changed(QVariant)), colorChoice, SLOT(displayText(QVariant)));
     connect(colorChoice, SIGNAL(activated(int)), this, SLOT(setColorIndex(int)));
@@ -372,8 +381,6 @@ void UBBoardController::setupToolbar()
 
     colorChoice->displayText(QVariant(settings->appToolBarDisplayText->get().toBool()));
     colorChoice->colorPaletteChanged();
-    colorChoice->setCurrentIndex(settings->penColorIndex());
-    colorActions.at(settings->penColorIndex())->setChecked(true);
 
     // Setup line width choice widget
     QList<QAction *> lineWidthActions;

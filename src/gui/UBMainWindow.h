@@ -63,6 +63,9 @@ class UBMainWindow : public QMainWindow, public Ui::MainWindow
         void showDownloadWidget();
         void hideDownloadWidget();
 
+        // openboard-tni : barre de menus classique, toujours visible
+        void setupMenuBar();
+
     signals:
         void closeEvent_Signal( QCloseEvent *event );
 

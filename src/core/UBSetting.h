@@ -103,6 +103,10 @@ class UBColorListSetting : public UBSetting
 
         virtual QVariant reset();
 
+        // openboard-tni : reconstruit la liste en mémoire à partir de la valeur enregistrée
+        // (utile après un set() direct de la liste de couleurs, qui ne met pas à jour mColors)
+        void reload();
+
         QList<QColor> colors() const;
 
         void setColor(int pIndex, const QColor& color);

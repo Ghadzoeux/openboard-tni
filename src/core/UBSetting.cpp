@@ -151,6 +151,25 @@ QVariant UBColorListSetting::reset()
     return result;
 }
 
+void UBColorListSetting::reload()
+{
+    mColors.clear();
+
+    foreach(QString s, get().toStringList())
+    {
+#if (QT_VERSION >= QT_VERSION_CHECK(6, 4, 0))
+        QColor color = QColor::fromString(s);
+#else
+        QColor color;
+        color.setNamedColor(s);
+#endif
+        if (mAlpha>=0)
+            color.setAlphaF(mAlpha);
+
+        mColors.append(color);
+    }
+}
+
 QList<QColor> UBColorListSetting::colors() const
 {
     return mColors;

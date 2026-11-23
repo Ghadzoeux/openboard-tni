@@ -11,6 +11,8 @@ target_sources(${PROJECT_NAME} PRIVATE
     UBCachePropertiesWidget.h
     UBCircleFrame.cpp
     UBCircleFrame.h
+    UBColorPaletteButton.cpp
+    UBColorPaletteButton.h
     UBColorPicker.cpp
     UBColorPicker.h
     UBDockDownloadWidget.cpp

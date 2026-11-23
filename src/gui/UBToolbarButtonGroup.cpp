@@ -177,7 +177,10 @@ int UBToolbarButtonGroup::currentIndex() const
 
 void UBToolbarButtonGroup::setCurrentIndex(int index)
 {
-    Q_ASSERT(index < mButtons.size());
+    // openboard-tni : la palette compte maintenant plus de couleurs que ce groupe n'a de boutons
+    // (palette du mode bureau) ; un indice hors limites décoche simplement tous les boutons.
+    if (index >= mButtons.size())
+        index = -1;
 
     if (index != mCurrentIndex)
     {

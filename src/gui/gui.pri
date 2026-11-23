@@ -11,6 +11,7 @@ HEADERS +=  \
     src/gui/UBIconButton.h \
     src/gui/UBDocumentThumbnailsView.h \
     src/gui/UBCircleFrame.h \
+    src/gui/UBColorPaletteButton.h \
     src/gui/UBColorPicker.h \
     src/gui/UBWidgetMirror.h \
     src/gui/UBScreenMirror.h \
@@ -60,6 +61,7 @@ SOURCES +=  \
     src/gui/UBIconButton.cpp \
     src/gui/UBDocumentThumbnailsView.cpp \
     src/gui/UBCircleFrame.cpp \
+    src/gui/UBColorPaletteButton.cpp \
     src/gui/UBColorPicker.cpp \
     src/gui/UBWidgetMirror.cpp \
     src/gui/UBScreenMirror.cpp \

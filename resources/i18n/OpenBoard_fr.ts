@@ -2789,6 +2789,46 @@ Voulez-vous continuer ?</translation>
 <context>
     <name>UBMainWindow</name>
     <message>
+        <location filename="../../src/gui/UBMainWindow.cpp" line="1"/>
+        <source>File</source>
+        <translation>Fichier</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/UBMainWindow.cpp" line="1"/>
+        <source>Edit</source>
+        <translation>Édition</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/UBMainWindow.cpp" line="1"/>
+        <source>Page</source>
+        <translation>Page</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/UBMainWindow.cpp" line="1"/>
+        <source>Background</source>
+        <translation>Fond</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/UBMainWindow.cpp" line="1"/>
+        <source>Page size</source>
+        <translation>Taille de la page</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/UBMainWindow.cpp" line="1"/>
+        <source>Tools</source>
+        <translation>Outils</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/UBMainWindow.cpp" line="1"/>
+        <source>View</source>
+        <translation>Affichage</translation>
+    </message>
+    <message>
+        <location filename="../../src/gui/UBMainWindow.cpp" line="1"/>
+        <source>Help</source>
+        <translation>Aide</translation>
+    </message>
+    <message>
         <location filename="../../src/gui/UBMainWindow.cpp" line="205"/>
         <source>Yes</source>
         <translation>Oui</translation>

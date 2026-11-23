@@ -51,7 +51,8 @@ int UBSettings::defaultCrossSize = 24;
 int UBSettings::minCrossSize = 12;
 int UBSettings::maxCrossSize = 96; //TODO: user-settable?
 bool UBSettings::intermediateLines = false;
-int UBSettings::colorPaletteSize = 5;
+// Nombre de couleurs de la palette du stylo et du marqueur (modifié : 5 -> 16, voir CHANGES-TNI.md)
+int UBSettings::colorPaletteSize = 16;
 int UBSettings::objectFrameWidth = 20;
 int UBSettings::boardMargin = 10;
 
@@ -311,21 +312,26 @@ void UBSettings::init()
     boardGridDarkBackgroundColors = new UBColorListSetting(this, "Board", "GridDarkBackgroundColors", gridDarkBackgroundColors, -1.0);
 
     QStringList penLightBackgroundColors;
-    penLightBackgroundColors << "#000000" << "#FF0000" <<"#004080" << "#008000" << "#FFDD00" << "#C87400" << "#800040" << "#008080"  << "#5F2D0A" << "#FFFFFF";
+    // 16 couleurs ; les 5 premières sont celles d'origine d'OpenBoard
+    penLightBackgroundColors << "#000000" << "#FF0000" <<"#004080" << "#008000" << "#FFDD00" << "#C87400" << "#800040" << "#008080"
+                             << "#5F2D0A" << "#7F7F7F" << "#FF69B4" << "#0080FF" << "#7F00FF" << "#00C000" << "#FF8000" << "#FFFFFF";
     boardPenLightBackgroundColors = new UBColorListSetting(this, "Board", "PenLightBackgroundColors", penLightBackgroundColors, 1.0);
 
     QStringList penDarkBackgroundColors;
-    penDarkBackgroundColors << "#FFFFFF" << "#FF3400" <<"#66C0FF" << "#81FF5C" << "#FFFF00" << "#B68360" << "#FF497E" << "#8D69FF" << "#000000";
+    penDarkBackgroundColors << "#FFFFFF" << "#FF3400" <<"#66C0FF" << "#81FF5C" << "#FFFF00" << "#B68360" << "#FF497E" << "#8D69FF"
+                            << "#C0C0C0" << "#FF9900" << "#FF80C0" << "#00E0E0" << "#C080FF" << "#80FF00" << "#FFC0A0" << "#000000";
     boardPenDarkBackgroundColors = new UBColorListSetting(this, "Board", "PenDarkBackgroundColors", penDarkBackgroundColors, 1.0);
 
     boardMarkerAlpha = new UBSetting(this, "Board", "MarkerAlpha", 0.5);
 
     QStringList markerLightBackgroundColors;
-    markerLightBackgroundColors << "#E3FF00" << "#FF0000" <<"#004080" << "#008000" << "#C87400" << "#800040" << "#008080"  << "#000000";
+    markerLightBackgroundColors << "#E3FF00" << "#FF0000" <<"#004080" << "#008000" << "#C87400" << "#800040" << "#008080"  << "#000000"
+                                << "#FF69B4" << "#00FF00" << "#00BFFF" << "#FF8000" << "#9B30FF" << "#7F7F7F" << "#5F2D0A" << "#FF00FF";
     boardMarkerLightBackgroundColors = new UBColorListSetting(this, "Board", "MarkerLightBackgroundColors", markerLightBackgroundColors, boardMarkerAlpha->get().toDouble());
 
     QStringList markerDarkBackgroundColors;
-    markerDarkBackgroundColors << "#FFFF00" << "#FF4400" <<"#66C0FF" << "#81FF5C" << "#B68360" << "#FF497E" << "#8D69FF" << "#FFFFFF";
+    markerDarkBackgroundColors << "#FFFF00" << "#FF4400" <<"#66C0FF" << "#81FF5C" << "#B68360" << "#FF497E" << "#8D69FF" << "#FFFFFF"
+                               << "#FF9900" << "#FF80C0" << "#00E0E0" << "#C080FF" << "#80FF00" << "#C0C0C0" << "#FFC0A0" << "#FF00FF";
     boardMarkerDarkBackgroundColors = new UBColorListSetting(this, "Board", "MarkerDarkBackgroundColors", markerDarkBackgroundColors, boardMarkerAlpha->get().toDouble());
 
     QStringList penLightBackgroundSelectedColors;
@@ -1497,6 +1503,9 @@ void UBSettings::checkNewSettings()
     // are still present (i.e only 4 selected pen colors), we just reset all color settings.
     // Having too few colors actually causes OpenBoard to crash, hence these measures.
 
+    // openboard-tni : la palette passe à colorPaletteSize (16) couleurs. Une ancienne configuration
+    // (5 couleurs sélectionnées) est réinitialisée, sinon l'accès aux couleurs 6 à 16 planterait.
+
     QList<UBColorListSetting*> colorSettings;
     colorSettings << boardPenDarkBackgroundSelectedColors
                   << boardPenLightBackgroundSelectedColors
@@ -1504,7 +1513,7 @@ void UBSettings::checkNewSettings()
                   << boardMarkerLightBackgroundSelectedColors;
 
     foreach (UBColorListSetting* setting, colorSettings) {
-        if (setting->colors().size() < 5)
+        if (setting->colors().size() < colorPaletteSize)
             setting->reset();
     }
 
@@ -1532,6 +1541,7 @@ void UBSettings::checkNewSettings()
         }
 
         setting->set(currentColors);
+        setting->reload();   // openboard-tni : sans cela, la liste en mémoire garde les anciennes couleurs
     }
 
 

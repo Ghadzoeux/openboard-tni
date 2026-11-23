@@ -32,6 +32,9 @@
 #include <QStackedLayout>
 
 #include "UBMainWindow.h"
+
+#include <QMenu>
+#include <QMenuBar>
 #include "core/UBApplication.h"
 #include "core/UBApplicationController.h"
 #include "board/UBBoardController.h"
@@ -79,6 +82,101 @@ UBMainWindow::UBMainWindow(QWidget *parent, Qt::WindowFlags flags)
 #endif
 
     UBShortcutManager::shortcutManager()->addMainActions(this);
+
+    setupMenuBar();
+}
+
+void UBMainWindow::setupMenuBar()
+{
+    // openboard-tni : OpenBoard d'origine n'a pas de barre de menus (tout passe par le bouton de menu
+    // de la barre d'outils). On construit ici une barre classique à partir des actions existantes ;
+    // les actions sont partagées avec les barres d'outils, donc raccourcis et état restent cohérents.
+    QMenuBar* bar = menuBar();
+    bar->setObjectName("ubMenuBar");
+    bar->setNativeMenuBar(true);   // barre système sous macOS, barre dans la fenêtre sous Windows
+
+    // --- Fichier ---
+    QMenu* fileMenu = bar->addMenu(tr("File"));
+    fileMenu->addAction(actionBoard);
+    fileMenu->addAction(actionDocument);
+    fileMenu->addAction(actionWeb);
+    fileMenu->addSeparator();
+    fileMenu->addAction(actionPreferences);
+    fileMenu->addAction(actionMultiScreen);
+    fileMenu->addSeparator();
+    fileMenu->addAction(actionHideApplication);
+    fileMenu->addAction(actionSleep);
+    fileMenu->addSeparator();
+    fileMenu->addAction(actionQuit);
+
+    // --- Édition ---
+    QMenu* editMenu = bar->addMenu(tr("Edit"));
+    editMenu->addAction(actionUndo);
+    editMenu->addAction(actionRedo);
+    editMenu->addSeparator();
+    editMenu->addAction(actionCut);
+    editMenu->addAction(actionCopy);
+    editMenu->addAction(actionPaste);
+    editMenu->addSeparator();
+    editMenu->addAction(actionEraseItems);
+    editMenu->addAction(actionEraseAnnotations);
+    editMenu->addAction(actionEraseBackground);
+    editMenu->addAction(actionClearPage);
+
+    // --- Page ---
+    QMenu* pageMenu = bar->addMenu(tr("Page"));
+    pageMenu->addAction(actionBack);
+    pageMenu->addAction(actionForward);
+    pageMenu->addSeparator();
+    pageMenu->addAction(actionNewPage);
+    pageMenu->addAction(actionDuplicatePage);
+    pageMenu->addAction(actionImportPage);
+    pageMenu->addSeparator();
+
+    QMenu* backgroundMenu = pageMenu->addMenu(tr("Background"));
+    backgroundMenu->addAction(actionPlainLightBackground);
+    backgroundMenu->addAction(actionCrossedLightBackground);
+    backgroundMenu->addAction(actionRuledLightBackground);
+    backgroundMenu->addAction(actionSeyesRuledLightBackground);
+    backgroundMenu->addSeparator();
+    backgroundMenu->addAction(actionPlainDarkBackground);
+    backgroundMenu->addAction(actionCrossedDarkBackground);
+    backgroundMenu->addAction(actionRuledDarkBackground);
+    backgroundMenu->addAction(actionSeyesRuledDarkBackground);
+
+    QMenu* sizeMenu = pageMenu->addMenu(tr("Page size"));
+    sizeMenu->addAction(actionWidePageSize);
+    sizeMenu->addAction(actionRegularPageSize);
+    sizeMenu->addAction(actionCustomPageSize);
+
+    // --- Outils ---
+    QMenu* toolsMenu = bar->addMenu(tr("Tools"));
+    toolsMenu->addAction(actionPen);
+    toolsMenu->addAction(actionMarker);
+    toolsMenu->addAction(actionEraser);
+    toolsMenu->addAction(actionLine);
+    toolsMenu->addAction(actionText);
+    toolsMenu->addSeparator();
+    toolsMenu->addAction(actionSelector);
+    toolsMenu->addAction(actionHand);
+    toolsMenu->addAction(actionPointer);
+    toolsMenu->addAction(actionCapture);
+    toolsMenu->addSeparator();
+    toolsMenu->addAction(actionVirtualKeyboard);
+
+    // --- Affichage ---
+    QMenu* viewMenu = bar->addMenu(tr("View"));
+    viewMenu->addAction(actionZoomIn);
+    viewMenu->addAction(actionZoomOut);
+    viewMenu->addSeparator();
+    viewMenu->addAction(actionSnap);
+    viewMenu->addAction(actionDesktop);
+
+    // --- Aide ---
+    QMenu* helpMenu = bar->addMenu(tr("Help"));
+    helpMenu->addAction(actionOpenTutorial);
+    helpMenu->addAction(actionHintsAndTips);
+    helpMenu->addAction(actionCheckUpdate);
 }
 
 UBMainWindow::~UBMainWindow()
