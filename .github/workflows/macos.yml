@@ -1,0 +1,76 @@
+# Compilation macOS de openboard-tni.
+# Les journaux de compilation sont aussi écrits dans une branche "ci-logs-*" pour pouvoir être relus
+# sans accès à l'interface GitHub Actions.
+name: build-macos
+
+on:
+  push:
+    branches: [ phase1-palette-menu, ci-test ]
+    paths: [ 'src/**', 'resources/**', 'OpenBoard.pro', 'plugins/**', '.github/workflows/macos.yml' ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  macos:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Préparation des journaux
+        run: |
+          mkdir -p logs
+          echo "démarrage $(date)" > logs/status.txt
+          sw_vers >> logs/status.txt
+          uname -m >> logs/status.txt
+
+      - name: Dépendances Homebrew
+        run: |
+          brew install qt poppler quazip openssl@3 pkg-config > logs/brew.log 2>&1; echo "brew exit code $?" >> logs/status.txt
+          brew --prefix qt >> logs/status.txt 2>&1 || true
+          brew --prefix quazip >> logs/status.txt 2>&1 || true
+          brew --prefix poppler >> logs/status.txt 2>&1 || true
+          ls "$(brew --prefix quazip)/include" >> logs/status.txt 2>&1 || true
+          test -x "$(brew --prefix qt)/bin/qmake"
+
+      - name: Compilation
+        run: |
+          QUAZIP=$(brew --prefix quazip)
+          POPPLER=$(brew --prefix poppler)
+          OPENSSL=$(brew --prefix openssl@3)
+          QUAZIP_INC=$(ls -d "$QUAZIP"/include/QuaZip-Qt6-*/quazip | head -1)
+          echo "quazip: $QUAZIP_INC" >> logs/status.txt
+          sed -i '' 's/-lquazip1-qt6.1.4/-lquazip1-qt6/' OpenBoard.pro
+          QMAKE=$(brew --prefix qt)/bin/qmake
+          $QMAKE OpenBoard.pro CONFIG+=release \
+            QMAKE_APPLE_DEVICE_ARCHS=arm64 \
+            "INCLUDEPATH+=$QUAZIP_INC" "INCLUDEPATH+=$POPPLER/include/poppler" "INCLUDEPATH+=$POPPLER/include" "INCLUDEPATH+=$OPENSSL/include" \
+            "LIBS+=-L$QUAZIP/lib" "LIBS+=-L$POPPLER/lib" "LIBS+=-L$OPENSSL/lib" > logs/qmake.log 2>&1; echo "qmake exit code $?" >> logs/status.txt
+          $(brew --prefix qt)/bin/lrelease OpenBoard.pro > logs/lrelease.log 2>&1 || true
+          make -j4 > logs/make.log 2>&1; echo "make exit code $?" >> logs/status.txt
+          ls build/macx/release/product >> logs/status.txt 2>&1 || true
+          test -d build/macx/release/product/OpenBoard.app
+
+      - name: Assemblage
+        run: |
+          cd build/macx/release/product
+          $(brew --prefix qt)/bin/macdeployqt OpenBoard.app > ../../../../logs/deploy.log 2>&1 || true
+          codesign --force --deep -s - OpenBoard.app >> ../../../../logs/deploy.log 2>&1 || true
+          ditto -c -k --keepParent OpenBoard.app ../../../../OpenBoard-tni-macos.zip
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: OpenBoard-tni-macos
+          path: OpenBoard-tni-macos.zip
+
+      - name: Journaux vers la branche ci-logs-macos
+        if: always()
+        run: |
+          mkdir -p out/macos && cp -r logs/. out/macos/ || true
+          tail -n 400 logs/make.log > out/macos/make-tail.log || true
+          tail -n 150 logs/brew.log > out/macos/brew-tail.log || true
+          echo "fin $(date)" >> out/macos/status.txt
+          git config --global user.email "ci@example.invalid" && git config --global user.name "ci"
+          cd out && git init -q && git checkout -q -b ci-logs && git add -A && git commit -q -m "journaux macos ${GITHUB_SHA}"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" ci-logs:ci-logs-macos
