@@ -1,0 +1,131 @@
+# Compilation Windows et macOS de openboard-tni.
+# Les journaux de compilation sont aussi écrits dans la branche "ci-logs" pour pouvoir être relus
+# sans accès à l'interface GitHub Actions.
+name: build
+
+on:
+  push:
+    branches: [ phase1-palette-menu, ci-test ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  windows:
+    runs-on: windows-2022
+    defaults:
+      run:
+        shell: cmd
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Bibliothèques tierces (poppler, openssl, zlib, quazip)
+        run: git clone --depth 1 --branch dev https://github.com/OpenBoard-org/OpenBoard-ThirdParty.git ..\OpenBoard-ThirdParty
+
+      - name: Qt 6.9
+        uses: jurplel/install-qt-action@v4
+        with:
+          version: '6.9.3'
+          host: windows
+          target: desktop
+          arch: win64_msvc2022_64
+          modules: 'qtwebengine qtwebchannel qtpositioning qtmultimedia qt5compat'
+          cache: true
+
+      - name: Environnement Visual Studio
+        uses: ilammy/msvc-dev-cmd@v1
+
+      - name: jom
+        run: choco install jom -y --no-progress
+
+      - name: Compilation
+        run: |
+          mkdir logs
+          qmake OpenBoard.pro CONFIG+=release > logs\qmake.log 2>&1
+          type logs\qmake.log
+          lrelease OpenBoard.pro > logs\lrelease.log 2>&1
+          jom -j4 > logs\make.log 2>&1
+          echo make exit code %ERRORLEVEL% >> logs\make.log
+          if not exist build\win32\release\product\OpenBoard.exe exit /b 1
+
+      - name: Assemblage du dossier à distribuer
+        run: |
+          set P=build\win32\release\product
+          nmake release-install > logs\install.log 2>&1
+          windeployqt --release --no-translations %P%\OpenBoard.exe > logs\deploy.log 2>&1
+          xcopy /y /q ..\OpenBoard-ThirdParty\poppler\bin\*.dll %P%\
+          xcopy /y /q ..\OpenBoard-ThirdParty\openssl\openssl-3.0.15-win64\bin\libssl-3-x64.dll %P%\
+          xcopy /y /q ..\OpenBoard-ThirdParty\openssl\openssl-3.0.15-win64\bin\libcrypto-3-x64.dll %P%\
+          xcopy /y /s /i /q resources\customizations %P%\customizations
+          xcopy /y /s /i /q resources\startupHints %P%\startupHints
+          xcopy /y /s /i /q resources\fonts %P%\fonts
+          dir %P% > logs\product.log
+
+      - name: Archive
+        shell: pwsh
+        run: Compress-Archive -Path build\win32\release\product\* -DestinationPath OpenBoard-tni-windows.zip
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: OpenBoard-tni-windows
+          path: OpenBoard-tni-windows.zip
+
+      - name: Journaux vers la branche ci-logs
+        if: always()
+        shell: bash
+        run: |
+          mkdir -p out && cp -r logs out/windows || true
+          tail -n 400 logs/make.log > out/windows/make-tail.log || true
+          git config --global user.email "ci@example.invalid" && git config --global user.name "ci"
+          cd out && git init -q && git checkout -q -b ci-logs && git add -A && git commit -q -m "journaux windows ${GITHUB_SHA}"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" ci-logs:ci-logs-windows
+
+  macos:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Dépendances Homebrew
+        run: brew install qt poppler quazip openssl@3 pkg-config
+
+      - name: Compilation
+        run: |
+          mkdir -p logs
+          QUAZIP=$(brew --prefix quazip)
+          POPPLER=$(brew --prefix poppler)
+          OPENSSL=$(brew --prefix openssl@3)
+          QUAZIP_INC=$(ls -d "$QUAZIP"/include/QuaZip-Qt6-*/quazip | head -1)
+          echo "quazip: $QUAZIP_INC"
+          sed -i '' 's/-lquazip1-qt6.1.4/-lquazip1-qt6/' OpenBoard.pro
+          QMAKE=$(brew --prefix qt)/bin/qmake
+          $QMAKE OpenBoard.pro CONFIG+=release \
+            QMAKE_APPLE_DEVICE_ARCHS=arm64 \
+            "INCLUDEPATH+=$QUAZIP_INC" "INCLUDEPATH+=$POPPLER/include/poppler" "INCLUDEPATH+=$POPPLER/include" "INCLUDEPATH+=$OPENSSL/include" \
+            "LIBS+=-L$QUAZIP/lib" "LIBS+=-L$POPPLER/lib" "LIBS+=-L$OPENSSL/lib" > logs/qmake.log 2>&1 || true
+          cat logs/qmake.log
+          $(brew --prefix qt)/bin/lrelease OpenBoard.pro > logs/lrelease.log 2>&1 || true
+          make -j4 > logs/make.log 2>&1; echo "make exit code $?" >> logs/make.log
+          ls build/macx/release/product >> logs/make.log 2>&1 || true
+          test -d build/macx/release/product/OpenBoard.app
+
+      - name: Assemblage
+        run: |
+          cd build/macx/release/product
+          $(brew --prefix qt)/bin/macdeployqt OpenBoard.app > ../../../../logs/deploy.log 2>&1 || true
+          codesign --force --deep -s - OpenBoard.app >> ../../../../logs/deploy.log 2>&1 || true
+          ditto -c -k --keepParent OpenBoard.app ../../../../OpenBoard-tni-macos.zip
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: OpenBoard-tni-macos
+          path: OpenBoard-tni-macos.zip
+
+      - name: Journaux vers la branche ci-logs
+        if: always()
+        run: |
+          mkdir -p out && cp -r logs out/macos || true
+          tail -n 400 logs/make.log > out/macos/make-tail.log || true
+          git config --global user.email "ci@example.invalid" && git config --global user.name "ci"
+          cd out && git init -q && git checkout -q -b ci-logs && git add -A && git commit -q -m "journaux macos ${GITHUB_SHA}"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" ci-logs:ci-logs-macos
