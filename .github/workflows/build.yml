@@ -39,6 +39,13 @@ jobs:
       - name: jom
         run: choco install jom -y --no-progress
 
+      - name: quazip (bibliothèque statique)
+        run: |
+          cd ..\OpenBoard-ThirdParty\quazip
+          qmake quazip.pro CONFIG+=release
+          nmake release
+          dir lib\win32\release
+
       - name: Compilation
         run: |
           mkdir logs
