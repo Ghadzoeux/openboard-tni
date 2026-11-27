@@ -157,6 +157,13 @@ int XPDFRenderer::pageCount() const
         return 0;
 }
 
+namespace
+{
+    // openboard-tni : compatibilité entre anciennes et nouvelles versions de poppler
+    inline QString ubPopplerToQString(const GooString* str) { return str ? QString(str->c_str()) : QString(); }
+    inline QString ubPopplerToQString(const std::string& str) { return QString::fromStdString(str); }
+}
+
 QString XPDFRenderer::title() const
 {
     if (isValid())
@@ -179,7 +186,9 @@ QString XPDFRenderer::title() const
             if (title.isString())
             {
 #if POPPLER_VERSION_MAJOR > 0 || POPPLER_VERSION_MINOR >= 72
-                return QString(title.getString()->c_str());
+                // openboard-tni : selon la version de poppler, getString() renvoie un GooString*
+                // ou un std::string ; la surcharge choisit la bonne conversion.
+                return ubPopplerToQString(title.getString());
 #else
                 return QString(title.getString()->getCString());
 #endif

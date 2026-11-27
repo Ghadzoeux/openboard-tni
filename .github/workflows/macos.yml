@@ -1,4 +1,4 @@
-# relance 2026-11-27 (macos-latest)
+# macos-latest ; corrections C++20, poppler, ffmpeg (2026-11-27)
 # Compilation macOS de openboard-tni.
 # Les journaux de compilation sont aussi écrits dans une branche "ci-logs-*" pour pouvoir être relus
 # sans accès à l'interface GitHub Actions.
@@ -28,7 +28,7 @@ jobs:
 
       - name: Dépendances Homebrew
         run: |
-          brew install qt poppler quazip openssl@3 pkg-config > logs/brew.log 2>&1; echo "brew exit code $?" >> logs/status.txt
+          (brew install qt poppler quazip openssl@3 pkg-config ffmpeg@7 || brew install qt poppler quazip openssl@3 pkg-config ffmpeg) > logs/brew.log 2>&1; echo "brew exit code $?" >> logs/status.txt
           brew --prefix qt >> logs/status.txt 2>&1 || true
           brew --prefix quazip >> logs/status.txt 2>&1 || true
           brew --prefix poppler >> logs/status.txt 2>&1 || true
@@ -40,13 +40,17 @@ jobs:
           QUAZIP=$(brew --prefix quazip)
           POPPLER=$(brew --prefix poppler)
           OPENSSL=$(brew --prefix openssl@3)
+          FFMPEG=$(brew --prefix ffmpeg@7 2>/dev/null); [ -d "$FFMPEG/include" ] || FFMPEG=$(brew --prefix ffmpeg)
+          echo "ffmpeg: $FFMPEG" >> logs/status.txt
+          # poppler récent (Homebrew) exige C++20
+          sed -i '' 's/CONFIG += c++17/CONFIG += c++20/' OpenBoard.pro
           QUAZIP_INC=$(ls -d "$QUAZIP"/include/QuaZip-Qt6-*/quazip | head -1)
           echo "quazip: $QUAZIP_INC" >> logs/status.txt
           sed -i '' 's/-lquazip1-qt6.1.4/-lquazip1-qt6/' OpenBoard.pro
           QMAKE=$(brew --prefix qt)/bin/qmake
           $QMAKE OpenBoard.pro CONFIG+=release \
             QMAKE_APPLE_DEVICE_ARCHS=arm64 \
-            "INCLUDEPATH+=$QUAZIP_INC" "INCLUDEPATH+=$POPPLER/include/poppler" "INCLUDEPATH+=$POPPLER/include" "INCLUDEPATH+=$OPENSSL/include" \
+            "INCLUDEPATH+=$QUAZIP_INC" "INCLUDEPATH+=$POPPLER/include/poppler" "INCLUDEPATH+=$POPPLER/include" "INCLUDEPATH+=$OPENSSL/include" "INCLUDEPATH+=$FFMPEG/include" "LIBS+=-L$FFMPEG/lib" \
             "LIBS+=-L$QUAZIP/lib" "LIBS+=-L$POPPLER/lib" "LIBS+=-L$OPENSSL/lib" > logs/qmake.log 2>&1; echo "qmake exit code $?" >> logs/status.txt
           $(brew --prefix qt)/bin/lrelease OpenBoard.pro > logs/lrelease.log 2>&1 || true
           make -j4 > logs/make.log 2>&1; echo "make exit code $?" >> logs/status.txt
