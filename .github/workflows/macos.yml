@@ -44,6 +44,9 @@ jobs:
           echo "ffmpeg: $FFMPEG" >> logs/status.txt
           # poppler récent (Homebrew) exige C++20
           sed -i '' 's/CONFIG += c++17/CONFIG += c++20/' OpenBoard.pro
+          # bibliothèques Homebrew en arm64 uniquement : pas de binaire universel (Apple Silicon seulement)
+          sed -i '' 's/QMAKE_APPLE_DEVICE_ARCHS=x86_64 arm64/QMAKE_APPLE_DEVICE_ARCHS=arm64/' OpenBoard.pro
+          grep -n QMAKE_APPLE_DEVICE_ARCHS OpenBoard.pro >> logs/status.txt
           QUAZIP_INC=$(ls -d "$QUAZIP"/include/QuaZip-Qt6-*/quazip | head -1)
           echo "quazip: $QUAZIP_INC" >> logs/status.txt
           sed -i '' 's/-lquazip1-qt6.1.4/-lquazip1-qt6/' OpenBoard.pro
