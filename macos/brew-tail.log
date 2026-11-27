@@ -1,0 +1,150 @@
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mdav1d[39m (1.5.5)[0m
+[34m==>[0m [1mPouring dav1d--1.5.5.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/dav1d/1.5.5: 16 files, 978.4KB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mfrei0r[39m (3.7.1)[0m
+[34m==>[0m [1mPouring frei0r--3.7.1.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/frei0r/3.7.1: 177 files, 6MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mhighway[39m (1.4.0)[0m
+[34m==>[0m [1mPouring highway--1.4.0.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/highway/1.4.0: 87 files, 5.7MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mimath[39m (3.2.3)[0m
+[34m==>[0m [1mPouring imath--3.2.3.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/imath/3.2.3: 50 files, 977.1KB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mlibdeflate[39m (1.26)[0m
+[34m==>[0m [1mPouring libdeflate--1.26.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/libdeflate/1.26: 17 files, 303.1KB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mopenjph[39m (0.33.0)[0m
+[34m==>[0m [1mPouring openjph--0.33.0.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/openjph/0.33.0: 25 files, 635.2KB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mopenexr[39m (3.5.5)[0m
+[34m==>[0m [1mPouring openexr--3.5.5.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/openexr/3.5.5: 214 files, 4.7MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mjpeg-xl[39m (0.13.0)[0m
+[34m==>[0m [1mPouring jpeg-xl--0.13.0.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/jpeg-xl/0.13.0: 65 files, 36.4MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mmpg123[39m (1.33.7)[0m
+[34m==>[0m [1mPouring mpg123--1.33.7.arm64_tahoe.bottle.1.tar.gz[0m
+🍺  /opt/homebrew/Cellar/mpg123/1.33.7: 34 files, 1.9MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mlame[39m (4.0)[0m
+[34m==>[0m [1mPouring lame--4.0.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/lame/4.0: 29 files, 1.9MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mfribidi[39m (1.0.18)[0m
+[34m==>[0m [1mPouring fribidi--1.0.18.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/fribidi/1.0.18: 69 files, 763.1KB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mlibunibreak[39m (8.0.1)[0m
+[34m==>[0m [1mPouring libunibreak--8.0.1.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/libunibreak/8.0.1: 17 files, 344.6KB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mlibass[39m (0.17.5_1)[0m
+[34m==>[0m [1mPouring libass--0.17.5_1.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/libass/0.17.5_1: 12 files, 619.2KB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mlibudfread[39m (1.2.0)[0m
+[34m==>[0m [1mPouring libudfread--1.2.0.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/libudfread/1.2.0: 13 files, 137.8KB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mlibbluray[39m (1.5.0)[0m
+[34m==>[0m [1mPouring libbluray--1.5.0.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/libbluray/1.5.0: 22 files, 1.2MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mcjson[39m (1.7.19)[0m
+[34m==>[0m [1mPouring cjson--1.7.19.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/cjson/1.7.19: 24 files, 244.4KB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mlibmicrohttpd[39m (1.0.11)[0m
+[34m==>[0m [1mPouring libmicrohttpd--1.0.11.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/libmicrohttpd/1.0.11: 29 files, 1.7MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mlibrist[39m (0.2.20)[0m
+[34m==>[0m [1mPouring librist--0.2.20.arm64_tahoe.bottle.1.tar.gz[0m
+🍺  /opt/homebrew/Cellar/librist/0.2.20: 34 files, 1.3MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mlibsoxr[39m (0.1.3)[0m
+[34m==>[0m [1mPouring libsoxr--0.1.3.arm64_tahoe.bottle.1.tar.gz[0m
+🍺  /opt/homebrew/Cellar/libsoxr/0.1.3: 30 files, 262.8KB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mlibssh[39m (0.12.2_1)[0m
+[34m==>[0m [1mPouring libssh--0.12.2_1.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/libssh/0.12.2_1: 25 files, 1.7MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mlibvidstab[39m (1.1.2)[0m
+[34m==>[0m [1mPouring libvidstab--1.1.2.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/libvidstab/1.1.2: 29 files, 579.3KB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mlibogg[39m (1.3.6)[0m
+[34m==>[0m [1mPouring libogg--1.3.6.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/libogg/1.3.6: 103 files, 531.9KB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mlibvorbis[39m (1.3.7)[0m
+[34m==>[0m [1mPouring libvorbis--1.3.7.arm64_tahoe.bottle.1.tar.gz[0m
+🍺  /opt/homebrew/Cellar/libvorbis/1.3.7: 158 files, 2.4MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mlibvpx[39m (1.17.0)[0m
+[34m==>[0m [1mPouring libvpx--1.17.0.arm64_tahoe.bottle.1.tar.gz[0m
+🍺  /opt/homebrew/Cellar/libvpx/1.17.0: 22 files, 4.4MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mopencore-amr[39m (0.1.6)[0m
+[34m==>[0m [1mPouring opencore-amr--0.1.6.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/opencore-amr/0.1.6: 18 files, 636.4KB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mopus[39m (1.6.1)[0m
+[34m==>[0m [1mPouring opus--1.6.1.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/opus/1.6.1: 16 files, 1.1MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mrav1e[39m (0.8.1)[0m
+[34m==>[0m [1mPouring rav1e--0.8.1.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/rav1e/0.8.1: 15 files, 50.8MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mlibsamplerate[39m (0.2.2)[0m
+[34m==>[0m [1mPouring libsamplerate--0.2.2.arm64_tahoe.bottle.1.tar.gz[0m
+🍺  /opt/homebrew/Cellar/libsamplerate/0.2.2: 33 files, 3.2MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mflac[39m (1.5.0)[0m
+[34m==>[0m [1mPouring flac--1.5.0.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/flac/1.5.0: 40 files, 1.9MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mlibsndfile[39m (1.2.2_1)[0m
+[34m==>[0m [1mPouring libsndfile--1.2.2_1.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/libsndfile/1.2.2_1: 55 files, 1.8MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mrubberband[39m (4.0.0)[0m
+[34m==>[0m [1mPouring rubberband--4.0.0.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/rubberband/4.0.0: 15 files, 2MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32msdl3[39m (3.4.20)[0m
+[34m==>[0m [1mPouring sdl3--3.4.20.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/sdl3/3.4.20: 103 files, 6.3MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32msdl2-compat[39m (2.32.74)[0m
+[34m==>[0m [1mPouring sdl2-compat--2.32.74.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/sdl2-compat/2.32.74: 117 files, 3.3MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32msnappy[39m (1.3.1)[0m
+[34m==>[0m [1mPouring snappy--1.3.1.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/snappy/1.3.1: 20 files, 172.4KB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mspeex[39m (1.2.1)[0m
+[34m==>[0m [1mPouring speex--1.2.1.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/speex/1.2.1: 26 files, 823.6KB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32msrt[39m (1.5.7_1)[0m
+[34m==>[0m [1mPouring srt--1.5.7_1.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/srt/1.5.7_1: 21 files, 4.9MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32msvt-av1[39m (4.3.0)[0m
+[34m==>[0m [1mPouring svt-av1--4.3.0.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/svt-av1/4.3.0: 23 files, 3.3MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mleptonica[39m (1.87.0)[0m
+[34m==>[0m [1mPouring leptonica--1.87.0.arm64_tahoe.bottle.1.tar.gz[0m
+🍺  /opt/homebrew/Cellar/leptonica/1.87.0: 55 files, 7.1MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mlibarchive[39m (3.8.11)[0m
+[34m==>[0m [1mPouring libarchive--3.8.11.arm64_tahoe.bottle.1.tar.gz[0m
+🍺  /opt/homebrew/Cellar/libarchive/3.8.11: 65 files, 4.1MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mlibdatrie[39m (0.2.14)[0m
+[34m==>[0m [1mPouring libdatrie--0.2.14.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/libdatrie/0.2.14: 20 files, 276.1KB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mlibthai[39m (0.1.30)[0m
+[34m==>[0m [1mPouring libthai--0.1.30.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/libthai/0.1.30: 30 files, 955KB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mpango[39m (1.58.2)[0m
+[34m==>[0m [1mPouring pango--1.58.2.arm64_tahoe.bottle.1.tar.gz[0m
+🍺  /opt/homebrew/Cellar/pango/1.58.2: 69 files, 3.7MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mtesseract[39m (5.5.4)[0m
+[34m==>[0m [1mPouring tesseract--5.5.4.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/tesseract/5.5.4: 74 files, 26.1MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mtheora[39m (1.2.0)[0m
+[34m==>[0m [1mPouring theora--1.2.0.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/theora/1.2.0: 126 files, 2.6MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mx264[39m (r3222)[0m
+[34m==>[0m [1mPouring x264--r3222.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/x264/r3222: 12 files, 4.4MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mx265[39m (4.3)[0m
+[34m==>[0m [1mPouring x265--4.3.arm64_tahoe.bottle.1.tar.gz[0m
+🍺  /opt/homebrew/Cellar/x265/4.3: 12 files, 17.3MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mxvid[39m (1.3.7)[0m
+[34m==>[0m [1mPouring xvid--1.3.7.arm64_tahoe.bottle.1.tar.gz[0m
+🍺  /opt/homebrew/Cellar/xvid/1.3.7: 12 files, 1.2MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mzeromq[39m (4.3.5_2)[0m
+[34m==>[0m [1mPouring zeromq--4.3.5_2.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/zeromq/4.3.5_2: 85 files, 6.6MB
+[32m==>[0m [1mInstalling ffmpeg@7 dependency: [32mzimg[39m (3.0.6)[0m
+[34m==>[0m [1mPouring zimg--3.0.6.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/zimg/3.0.6: 28 files, 1.2MB
+[32m==>[0m [1mInstalling [32mffmpeg@7[39m[0m
+[34m==>[0m [1mPouring ffmpeg@7--7.1.5_4.arm64_tahoe.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/ffmpeg@7/7.1.5_4: 289 files, 53.3MB

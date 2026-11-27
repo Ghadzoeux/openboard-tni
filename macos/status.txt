@@ -1,0 +1,19 @@
+démarrage Fri Nov 27 18:03:42 UTC 2026
+ProductName:		macOS
+ProductVersion:		26.7.2
+BuildVersion:		25G332
+arm64
+brew exit code 0
+/opt/homebrew/opt/qt
+/opt/homebrew/opt/quazip
+/opt/homebrew/opt/poppler
+quazip
+QuaZip-Qt6-1.7.2
+ffmpeg: /opt/homebrew/opt/ffmpeg@7
+190:   QMAKE_APPLE_DEVICE_ARCHS=arm64
+191:   #QMAKE_APPLE_DEVICE_ARCHS = arm64
+quazip: /opt/homebrew/opt/quazip/include/QuaZip-Qt6-1.7.2/quazip
+qmake exit code 0
+make exit code 0
+OpenBoard.app
+fin Fri Nov 27 18:23:54 UTC 2026
