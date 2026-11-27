@@ -1,4 +1,4 @@
-# relance 2026-11-24
+# relance 2026-11-27 (macos-latest)
 # Compilation macOS de openboard-tni.
 # Les journaux de compilation sont aussi écrits dans une branche "ci-logs-*" pour pouvoir être relus
 # sans accès à l'interface GitHub Actions.
@@ -15,7 +15,7 @@ permissions:
 
 jobs:
   macos:
-    runs-on: macos-14
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
 
