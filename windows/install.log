@@ -1,0 +1,11 @@
+
+Microsoft (R) Program Maintenance Utility Version 14.44.35230.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+	"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\nmake.exe" -f Makefile.Release install
+
+Microsoft (R) Program Maintenance Utility Version 14.44.35230.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+	D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\bin\qmake.exe -install qinstall D:\a\openboard-tni\openboard-tni\resources\etc D:\a\openboard-tni\openboard-tni\build\win32\release\product\etc
+	D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\bin\qmake.exe -install qinstall D:\a\openboard-tni\openboard-tni\resources\library D:\a\openboard-tni\openboard-tni\build\win32\release\product\library

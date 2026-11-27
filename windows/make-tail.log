@@ -1,0 +1,400 @@
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6PrintSupport.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Widgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6WebEngineCore.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Quick.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6OpenGL.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Multimedia.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Gui.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6QmlMeta.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6QmlModels.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6QmlWorkerScript.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6WebChannel.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Qml.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Network.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Xml.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Positioning.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Concurrent.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Core5Compat.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Core.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6EntryPoint.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\shell32.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\msvcprt.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\MSVCRT.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\OLDNAMES.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\uuid.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\kernel32.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\vcruntime.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.26100.0\ucrt\x64\ucrt.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Advapi32.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\zlib\1.2.11\lib\zlib.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\User32.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Gdi32.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Ole32.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\quazip\lib\win32\release\quazip.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\poppler\lib\poppler.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\openssl\openssl-3.0.15-win64\lib\libssl.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\openssl\openssl-3.0.15-win64\lib\libcrypto.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Wmvcore.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Winmm.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6SvgWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Svg.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6UiTools.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6OpenGLWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6MultimediaWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6WebEngineWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6PrintSupport.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Widgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6WebEngineCore.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Quick.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6OpenGL.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Multimedia.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Gui.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6QmlMeta.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6QmlModels.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6QmlWorkerScript.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6WebChannel.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Qml.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Network.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Xml.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Positioning.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Concurrent.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Core5Compat.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Core.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6EntryPoint.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\shell32.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\msvcprt.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\MSVCRT.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\OLDNAMES.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\uuid.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\kernel32.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\vcruntime.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.26100.0\ucrt\x64\ucrt.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Advapi32.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\zlib\1.2.11\lib\zlib.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\User32.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Gdi32.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Ole32.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\quazip\lib\win32\release\quazip.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\poppler\lib\poppler.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\openssl\openssl-3.0.15-win64\lib\libssl.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\openssl\openssl-3.0.15-win64\lib\libcrypto.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Wmvcore.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Winmm.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6SvgWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Svg.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6UiTools.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6OpenGLWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6MultimediaWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6WebEngineWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6PrintSupport.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Widgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6WebEngineCore.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Quick.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6OpenGL.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Multimedia.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Gui.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6QmlMeta.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6QmlModels.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6QmlWorkerScript.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6WebChannel.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Qml.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Network.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Xml.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Positioning.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Concurrent.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Core5Compat.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Core.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6EntryPoint.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\shell32.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\msvcprt.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\MSVCRT.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\OLDNAMES.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\uuid.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\kernel32.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\vcruntime.lib:
+
+Finished searching libraries
+   Creating library build\win32\release\product\OpenBoard.lib and object build\win32\release\product\OpenBoard.exp
+
+Searching libraries
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Advapi32.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\zlib\1.2.11\lib\zlib.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\User32.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Gdi32.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Ole32.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\quazip\lib\win32\release\quazip.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\poppler\lib\poppler.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\openssl\openssl-3.0.15-win64\lib\libssl.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\openssl\openssl-3.0.15-win64\lib\libcrypto.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Wmvcore.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Winmm.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6SvgWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Svg.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6UiTools.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6OpenGLWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6MultimediaWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6WebEngineWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6PrintSupport.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Widgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6WebEngineCore.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Quick.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6OpenGL.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Multimedia.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Gui.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6QmlMeta.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6QmlModels.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6QmlWorkerScript.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6WebChannel.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Qml.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Network.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Xml.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Positioning.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Concurrent.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Core5Compat.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Core.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6EntryPoint.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\shell32.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\msvcprt.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\MSVCRT.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\OLDNAMES.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\uuid.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\kernel32.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\vcruntime.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.26100.0\ucrt\x64\ucrt.lib:
+
+Finished searching libraries
+
+Searching libraries
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Advapi32.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\zlib\1.2.11\lib\zlib.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\User32.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Gdi32.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Ole32.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\quazip\lib\win32\release\quazip.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\poppler\lib\poppler.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\openssl\openssl-3.0.15-win64\lib\libssl.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\openssl\openssl-3.0.15-win64\lib\libcrypto.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Wmvcore.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Winmm.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6SvgWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Svg.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6UiTools.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6OpenGLWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6MultimediaWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6WebEngineWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6PrintSupport.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Widgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6WebEngineCore.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Quick.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6OpenGL.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Multimedia.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Gui.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6QmlMeta.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6QmlModels.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6QmlWorkerScript.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6WebChannel.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Qml.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Network.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Xml.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Positioning.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Concurrent.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Core5Compat.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Core.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6EntryPoint.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\shell32.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\msvcprt.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\MSVCRT.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\OLDNAMES.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\uuid.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\kernel32.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\vcruntime.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.26100.0\ucrt\x64\ucrt.lib:
+
+Finished searching libraries
+
+Searching libraries
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Advapi32.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\zlib\1.2.11\lib\zlib.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\User32.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Gdi32.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Ole32.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\quazip\lib\win32\release\quazip.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\poppler\lib\poppler.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\openssl\openssl-3.0.15-win64\lib\libssl.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\openssl\openssl-3.0.15-win64\lib\libcrypto.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Wmvcore.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Winmm.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6SvgWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Svg.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6UiTools.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6OpenGLWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6MultimediaWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6WebEngineWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6PrintSupport.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Widgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6WebEngineCore.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Quick.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6OpenGL.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Multimedia.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Gui.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6QmlMeta.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6QmlModels.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6QmlWorkerScript.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6WebChannel.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Qml.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Network.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Xml.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Positioning.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Concurrent.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Core5Compat.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Core.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6EntryPoint.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\shell32.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\msvcprt.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\MSVCRT.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\OLDNAMES.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\uuid.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\kernel32.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\vcruntime.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.26100.0\ucrt\x64\ucrt.lib:
+
+Finished searching libraries
+
+Searching libraries
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Advapi32.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\zlib\1.2.11\lib\zlib.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\User32.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Gdi32.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Ole32.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\quazip\lib\win32\release\quazip.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\poppler\lib\poppler.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\openssl\openssl-3.0.15-win64\lib\libssl.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\openssl\openssl-3.0.15-win64\lib\libcrypto.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Wmvcore.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Winmm.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6SvgWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Svg.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6UiTools.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6OpenGLWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6MultimediaWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6WebEngineWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6PrintSupport.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Widgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6WebEngineCore.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Quick.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6OpenGL.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Multimedia.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Gui.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6QmlMeta.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6QmlModels.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6QmlWorkerScript.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6WebChannel.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Qml.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Network.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Xml.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Positioning.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Concurrent.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Core5Compat.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Core.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6EntryPoint.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\shell32.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\msvcprt.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\MSVCRT.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\OLDNAMES.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\uuid.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\kernel32.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\vcruntime.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.26100.0\ucrt\x64\ucrt.lib:
+
+Finished searching libraries
+
+Searching libraries
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Advapi32.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\zlib\1.2.11\lib\zlib.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\User32.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Gdi32.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Ole32.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\quazip\lib\win32\release\quazip.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\poppler\lib\poppler.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\openssl\openssl-3.0.15-win64\lib\libssl.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\openssl\openssl-3.0.15-win64\lib\libcrypto.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Wmvcore.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Winmm.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6SvgWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Svg.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6UiTools.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6OpenGLWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6MultimediaWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6WebEngineWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6PrintSupport.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Widgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6WebEngineCore.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Quick.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6OpenGL.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Multimedia.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Gui.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6QmlMeta.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6QmlModels.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6QmlWorkerScript.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6WebChannel.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Qml.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Network.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Xml.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Positioning.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Concurrent.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Core5Compat.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Core.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6EntryPoint.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\shell32.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\msvcprt.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\MSVCRT.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\OLDNAMES.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\uuid.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\kernel32.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\vcruntime.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.26100.0\ucrt\x64\ucrt.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Advapi32.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\zlib\1.2.11\lib\zlib.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\User32.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Gdi32.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Ole32.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\quazip\lib\win32\release\quazip.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\poppler\lib\poppler.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\openssl\openssl-3.0.15-win64\lib\libssl.lib:
+    Searching D:\a\openboard-tni\OpenBoard-ThirdParty\openssl\openssl-3.0.15-win64\lib\libcrypto.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Wmvcore.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\Winmm.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6SvgWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Svg.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6UiTools.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6OpenGLWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6MultimediaWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6WebEngineWidgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6PrintSupport.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Widgets.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6WebEngineCore.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Quick.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6OpenGL.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Multimedia.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Gui.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6QmlMeta.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6QmlModels.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6QmlWorkerScript.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6WebChannel.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Qml.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Network.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Xml.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Positioning.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Concurrent.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Core5Compat.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6Core.lib:
+    Searching D:\a\openboard-tni\Qt\6.9.3\msvc2022_64\lib\Qt6EntryPoint.lib:
+    Searching C:\Program Files (x86)\Windows Kits\10\\lib\10.0.26100.0\\um\x64\shell32.lib:
+    Searching C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\lib\x64\msvcprt.lib:
+
+Finished searching libraries
+LINK : warning LNK4217: symbol '??0UBCFFAdaptor@@QEAA@XZ (public: __cdecl UBCFFAdaptor::UBCFFAdaptor(void))' defined in 'UBCFFAdaptor.obj' is imported by 'UBExportCFF.obj' in function '"public: virtual void __cdecl UBExportCFF::persist(class std::shared_ptr<class UBDocumentProxy>)" (?persist@UBExportCFF@@UEAAXV?$shared_ptr@VUBDocumentProxy@@@std@@@Z)'
+LINK : warning LNK4217: symbol '??1UBCFFAdaptor@@QEAA@XZ (public: __cdecl UBCFFAdaptor::~UBCFFAdaptor(void))' defined in 'UBCFFAdaptor.obj' is imported by 'UBExportCFF.obj' in function '"public: virtual void __cdecl UBExportCFF::persist(class std::shared_ptr<class UBDocumentProxy>)" (?persist@UBExportCFF@@UEAAXV?$shared_ptr@VUBDocumentProxy@@@std@@@Z)'
+LINK : warning LNK4217: symbol '?convertUBZToIWB@UBCFFAdaptor@@QEAA_NAEBVQString@@0@Z (public: bool __cdecl UBCFFAdaptor::convertUBZToIWB(class QString const &,class QString const &))' defined in 'UBCFFAdaptor.obj' is imported by 'UBExportCFF.obj' in function '"public: virtual void __cdecl UBExportCFF::persist(class std::shared_ptr<class UBDocumentProxy>)" (?persist@UBExportCFF@@UEAAXV?$shared_ptr@VUBDocumentProxy@@@std@@@Z)'
+LINK : warning LNK4217: symbol '?getConversionMessages@UBCFFAdaptor@@QEAA?AV?$QList@VQString@@@@XZ (public: class QList<class QString> __cdecl UBCFFAdaptor::getConversionMessages(void))' defined in 'UBCFFAdaptor.obj' is imported by 'UBExportCFF.obj' in function '"public: virtual void __cdecl UBExportCFF::persist(class std::shared_ptr<class UBDocumentProxy>)" (?persist@UBExportCFF@@UEAAXV?$shared_ptr@VUBDocumentProxy@@@std@@@Z)'
+make exit code 0 
